@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_stroke_horizental_line_unfocused" android:state_hovered="true" />
+    <item android:drawable="@drawable/ic_stroke_horizental_line_unfocused" android:state_enabled="false" />
+    <item android:drawable="@drawable/ic_stroke_horizental_line_focused" android:state_focused="true" />
+</selector>

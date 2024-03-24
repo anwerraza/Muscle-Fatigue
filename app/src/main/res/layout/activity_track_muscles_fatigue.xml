@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:plot="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".screen.TrackMusclesFatigueActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:paddingVertical="@dimen/space_10"
+        android:elevation="@dimen/space_5">
+
+        <ImageView
+            android:id="@+id/backIconIv"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:padding="@dimen/space_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_left"
+            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:layout_toEndOf="@id/backIconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Your Fatigue"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="@dimen/space_15"
+            android:textColor="@color/white"
+            android:theme="@style/textExLargeBlack"/>
+
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/screens_side_spacing"
+            android:background="@drawable/top_rounded_corner_white_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textInputLabelGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor Status : " />
+
+                <TextView
+                    android:id="@+id/sensorStatusTv"
+                    style="@style/textInputLabelGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bluetooth_off"
+                    android:drawablePadding="@dimen/space_10"
+                    android:drawableEnd="@drawable/ic_yellow_dot"/>
+
+            </LinearLayout>
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/fatigueThresholdLabel"-->
+<!--                    style="@style/textInputLabelGrey"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/space_15"-->
+<!--                    android:text="Fatigue Threshold" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_below="@+id/fatigueThresholdLabel"-->
+<!--                    android:id="@+id/fatigueThresholdEt"-->
+<!--                    style="@style/editTextStyle"-->
+<!--                    android:layout_marginTop="@dimen/space_5"-->
+<!--                    android:paddingHorizontal="@dimen/space_15"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/space_60"-->
+<!--                    android:digits="0123456789.-"-->
+<!--                    android:gravity="center_vertical|start"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="5"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:layout_toStartOf="@id/fatigueThresholdBtn"-->
+<!--                    android:layout_marginEnd="@dimen/space_15"/>-->
+
+<!--                <Button-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:id="@+id/fatigueThresholdBtn"-->
+<!--                    android:layout_width="@dimen/space_100"-->
+<!--                    android:layout_height="@dimen/space_60"-->
+<!--                    android:layout_marginTop="@dimen/space_30"-->
+<!--                    android:background="@drawable/rounded_corner_app_button"-->
+<!--                    android:elevation="3dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:text="Save"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textAppearance="@style/MyButtonTextAppearance"-->
+<!--                    />-->
+
+<!--            </RelativeLayout>-->
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginTop="@dimen/space_15"
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_300"/>
+
+            <TextView
+                android:id="@+id/fatigueDetectTv"
+                style="@style/textLargeBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:text="Fatigue Detected"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/timeCounterTv"
+                style="@style/textLargeBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/startStreamingBtn"
+                android:layout_width="@dimen/space_200"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_30"
+                android:background="@drawable/rounded_corner_app_button"
+                android:elevation="3dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Start Streaming"
+                android:textAlignment="center"
+                android:textAppearance="@style/MyButtonTextAppearance" />
+
+
+            <Button
+                android:id="@+id/stopStreamingBtn"
+                android:layout_width="@dimen/space_200"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_30"
+                android:background="@drawable/rounded_corner_app_button"
+                android:elevation="3dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Stop Streaming"
+                android:textAlignment="center"
+                android:textAppearance="@style/MyButtonTextAppearance" />
+
+            <Button
+                android:id="@+id/resetStreamingBtn"
+                android:layout_width="@dimen/space_200"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_30"
+                android:background="@drawable/rounded_corner_app_button"
+                android:elevation="3dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Reset"
+                android:textAlignment="center"
+                android:textAppearance="@style/MyButtonTextAppearance" />
+
+
+            <Button
+                android:id="@+id/saveStreamingBtn"
+                android:layout_width="@dimen/space_200"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_30"
+                android:background="@drawable/rounded_corner_app_button"
+                android:elevation="3dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Save Into CSV"
+                android:textAlignment="center"
+                android:textAppearance="@style/MyButtonTextAppearance" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

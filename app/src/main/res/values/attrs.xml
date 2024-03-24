@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomStates">
+        <attr name="state_filled" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedBarChart">
+        <attr name="barRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RingChart">
+        <attr format="color" name="RingChartPrimaryColor"/>
+        <attr format="color" name="RingChartSecondaryColor"/>
+        <attr name="renderMode" format="enum">
+            <enum name="overlap" value="0"/>
+            <enum name="concentric" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+
+</resources>

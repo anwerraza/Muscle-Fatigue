@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        android:id="@+id/content_main"
+        layout="@layout/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/dialog_bg_color"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_home_main_drawer" >
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@drawable/rounded_corner_app_button"
+            android:elevation="3dp"
+            android:textAppearance="@style/MyButtonTextAppearance"
+            android:text="@string/log_out"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/screens_side_spacing"
+            android:layout_marginHorizontal="@dimen/screens_side_spacing"/>
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

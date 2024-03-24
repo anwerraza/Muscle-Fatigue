@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/screens_side_spacing"
+    android:paddingVertical="@dimen/screens_upper_spacing"
+    tools:context=".screen.SignInActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+                android:src="@drawable/ic_app_logo"
+                android:scaleType="fitXY" />
+
+            <TextView
+                style="@style/textHeading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_20"
+                android:text="@string/sign_in" />
+
+            <EditText
+                android:id="@+id/emailEt"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/space_50"
+                android:paddingHorizontal="@dimen/space_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:digits="0123456789@._-ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:gravity="center_vertical|start"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:singleLine="true" />
+
+
+            <com.fyp.musclefatigue.widgets.PasswordEditText
+                android:id="@+id/passwordEt"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/space_15"
+                android:paddingHorizontal="@dimen/space_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:drawableRight="@drawable/ic_close_eye"
+                android:gravity="center_vertical|start"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/space_10"
+                android:id="@+id/forgotPasswordTv"
+                style="@style/textLargeGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/forgot_password_" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="@dimen/space_200"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_30"
+                android:background="@drawable/rounded_corner_app_button"
+                android:elevation="3dp"
+                android:singleLine="true"
+                android:text="@string/sign_in"
+                android:textAlignment="center"
+                android:textAppearance="@style/MyButtonTextAppearance" />
+
+            <Button
+                android:id="@+id/googleBtn"
+                android:layout_width="@dimen/space_250"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginHorizontal="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/rounded_corner_app_outline_button"
+                android:drawableStart="@drawable/ic_google"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:minWidth="@dimen/space_350"
+                android:paddingHorizontal="@dimen/space_10"
+                android:text="@string/login_with_google"
+                android:textAppearance="@style/MyButtonTextAppearance"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:id="@+id/signUpTv"
+                android:layout_marginTop="@dimen/space_20"
+                style="@style/textLargeBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

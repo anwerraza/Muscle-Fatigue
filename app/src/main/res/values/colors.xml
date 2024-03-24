@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5349</color>
+    <color name="colorPrimaryLight">#FF6E65</color>
+    <color name="colorPrimaryDark">#FF4136</color>
+    <color name="colorAccent">#071e37</color>
+
+    <color name="app_logo_color">#FF5349</color>
+
+    <color name="textDarkGrey">#25272B</color>
+    <color name="textGrey">#717C92</color>
+    <color name="textLightGrey">#B8C1D4</color>
+    <color name="disabled_text_color">#61000000</color>
+
+    <color name="app_dark_blue">#071e37</color>
+    <color name="app_medium_blue">#072543</color>
+
+    <color name="disabled_item_color">#e7e9eb</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="unfocused_color">#717C92</color>
+
+    <color name="grey_light">#abb4bc</color>
+    <color name="divider_grey">#e8ecf3</color>
+    <color name="dialog_bg_color">#f1f4fb</color>
+    <color name="screens_bg_color">#F1F4FB</color>
+
+    <color name="icon_light_color">#B8C1D4</color>
+    <color name="icon_dark_color">#25272b</color>
+    <color name="chat_card_url">#12000000</color>
+    <color name="ring_chart_unfilled">#E2E6EF</color>
+
+
+</resources>

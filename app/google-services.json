@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "840457899925",
+    "project_id": "muscles-fatigue",
+    "storage_bucket": "muscles-fatigue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840457899925:android:8e4f91a12a4fcdb8da709c",
+        "android_client_info": {
+          "package_name": "com.fyp.musclefatigue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840457899925-1qvg24rflcgc0kdhc9m3mq94fu965qch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.musclefatigue",
+            "certificate_hash": "e2149b7a5330ed96fb19bdb8e1d15b377560b697"
+          }
+        },
+        {
+          "client_id": "840457899925-d65t46kqhql2ed19ot0v87phkkqb6a0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFaGToaZ2oBR5MaL6TBDpn2cFOeV1e2MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840457899925-d65t46kqhql2ed19ot0v87phkkqb6a0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

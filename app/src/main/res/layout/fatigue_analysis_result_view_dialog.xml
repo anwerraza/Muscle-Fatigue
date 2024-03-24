@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screens_side_spacing"
+    android:orientation="vertical"
+    android:background="@color/screens_bg_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            style="@style/textExLargeBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fatigue_analysis_result" />
+
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:src="@drawable/ic_close"
+            android:padding="@dimen/space_15"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textLargeBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_20"
+                android:textStyle="bold"
+                android:text="Fatigue found" />
+
+
+            <TextView
+                android:id="@+id/fatigueTimeTv"
+                style="@style/textNormalGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="4 to 5 mint(s)" />
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textLargeBlack"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/space_30"
+                android:text="Workout Recommendation"/>
+
+            <ImageView
+                android:layout_marginTop="@dimen/space_10"
+                android:id="@+id/workoutImageIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_not_available"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/space_20"
+                android:id="@+id/durationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textNormalGrey"
+                android:text="Duration: Approximately 30-45 minutes per session."/>
+
+            <TextView
+                android:layout_marginTop="@dimen/space_10"
+                android:id="@+id/frequencyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textNormalGrey"
+                android:text="Frequency: 2-3 times per week, with at least one rest day between sessions."/>
+
+            <TextView
+                android:id="@+id/recommendationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                style="@style/textNormalGrey"/>
+
+            <TextView
+                android:id="@+id/noteTvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_30"
+                style="@style/textLargeBlack"
+                android:textColor="@color/red_circle"
+                android:text="Note"/>
+
+            <!-- Frequency -->
+            <TextView
+                android:layout_marginTop="@dimen/space_10"
+                android:id="@+id/noteTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textNormalGrey"
+                android:text="Adjustments can be made based on individual fitness levels, preferences, and any pre-existing health conditions."/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

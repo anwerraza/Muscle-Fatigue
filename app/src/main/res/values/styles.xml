@@ -1,0 +1,241 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateAlwaysHidden</item>
+    </style>
+
+    <!-- dialog  -->
+
+    <style name="Theme_Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- dialog  -->
+
+    <style name="MaterialDialogBottomSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_popup_show</item>
+        <item name="android:windowExitAnimation">@anim/bottom_popup_hide</item>
+    </style>
+
+    <!--  bottom popup dialog  -->
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="textStyleTabLayout" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeExLarge</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textHeading1" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textHeading2" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="textHeading3" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="textSubtitleGrey" >
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textSubtitleBlack" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+     <style name="textExLargeBlack" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeExLarge</item>
+        <item name="android:gravity">center_vertical</item>
+         <item name="android:fontFamily">@font/josefin_sans_regular</item>
+    </style>
+
+    <style name="textExLargeGrey" >
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textSize">@dimen/textSizeExLarge</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textLargeBlack" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:gravity">center_vertical</item>
+         <item name="android:fontFamily">@font/josefin_sans_regular</item>
+    </style>
+
+    <style name="textLargeGrey" >
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="textNormalBlack" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textNormalGrey" >
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textSmallBlack" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeExSmall</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textSmallGrey" >
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textSize">@dimen/textSizeExSmall</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textCardTitle" >
+        <item name="android:textColor">@color/grey_light</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+    </style>
+
+    <style name="textInputLabel" >
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textInputLabelGrey" >
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="MyButtonTextAppearance" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/app_button_text_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MyAlertDialogButtonTextAppearance" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="editTextStyle" parent="Widget.AppCompat.EditText">
+        <!-- Floating label appearance here -->
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/textLightGrey</item>
+        <item name="android:textColor">@color/textDarkGrey</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:background">@drawable/rounded_corner_edit_text_bg</item>
+    </style>
+
+    <style name="outlineButton" parent="Theme.MaterialComponents">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/josefin_sans_semi_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/rounded_corner_app_outline_button</item>
+        <item name="android:elevation">@dimen/space_5</item>
+        <item name="android:minWidth">@dimen/space_350</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="roundedCornerTextLabel">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:fontFamily">@font/josefin_sans_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/space_5</item>
+        <item name="cornerSizeTopRight">@dimen/space_5</item>
+    </style>
+
+    <style name="radioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/custom_radio_btn</item>
+        <item name="android:textColor">@drawable/radio_button_text_selector</item>
+        <item name="android:paddingStart">@dimen/space_15</item>
+        <item name="android:paddingEnd">@dimen/space_15</item>
+        <item name="android:paddingTop">@dimen/space_10</item>
+        <item name="android:paddingBottom">@dimen/space_10</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+
+
+</resources>

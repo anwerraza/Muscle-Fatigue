@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:maxWidth="@dimen/space_350"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_marginHorizontal="@dimen/screens_side_spacing"
+    android:layout_gravity="center"
+    android:clipToPadding="false"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/space_15">
+
+        <LinearLayout
+            android:id="@+id/bottomBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/screens_side_spacing"
+            android:paddingTop="@dimen/space_45"
+            android:paddingBottom="@dimen/space_30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dialogIconIv"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="@dimen/space_5"
+                android:src="@drawable/ic_warning" />
+
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_marginTop="@dimen/space_15"
+                android:fontFamily="@font/josefin_sans_semi_bold"
+                android:textSize="24sp"
+                android:textColor="@color/textDarkGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Alert!" />
+
+
+            <TextView
+                android:id="@+id/dialogMessage"
+                android:fontFamily="@font/josefin_sans_regular"
+                android:textSize="18sp"
+                android:textColor="@color/textGrey"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="Lorem Ipsum dummy text" />
+
+            <Button
+                android:id="@+id/dialogOkBtn"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/space_350"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_25"
+                android:layout_marginBottom="@dimen/space_15"
+                android:background="@drawable/rounded_corner_app_button"
+                android:elevation="2dp"
+                android:singleLine="true"
+                android:text="@string/ok"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textAppearance="@style/MyButtonTextAppearance" />
+
+
+            <TextView
+                android:id="@+id/dialogCancelTv"
+                style="@style/textNormalBlack"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/space_350"
+                android:layout_height="@dimen/space_40"
+                android:gravity="center"
+                android:text="@string/cancel" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

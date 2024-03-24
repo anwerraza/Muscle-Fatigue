@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_daily_workout_alert"
+            android:title="Daily Workout Alerts" />
+        <item
+            android:id="@+id/nav_analysis_muscles_fatigue"
+            android:title="Analysis Muscles Fatigue" />
+        <item
+            android:id="@+id/nav_track_muscles_fatigue"
+            android:title="Track Muscles Fatigue" />
+    </group>
+</menu>

@@ -1,0 +1,28 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <item android:state_checked="true" android:state_window_focused="false"-->
+    <!--        android:drawable="@drawable/rounded_blue_button" />-->
+    <!--    <item android:state_checked="false" android:state_window_focused="false"-->
+    <!--        android:drawable="@drawable/rounded_blue_outline_button" />-->
+
+    <!--    <item android:state_checked="true" android:state_pressed="true"-->
+    <!--        android:drawable="@drawable/rounded_blue_button" />-->
+    <!--    <item android:state_checked="false" android:state_pressed="true"-->
+    <!--        android:drawable="@drawable/rounded_blue_outline_button" />-->
+
+    <!--    <item android:state_checked="true" android:state_focused="true"-->
+    <!--        android:drawable="@drawable/rounded_blue_button" />-->
+    <!--    <item android:state_checked="false" android:state_focused="true"-->
+    <!--        android:drawable="@drawable/rounded_blue_outline_button" />-->
+
+    <item
+        android:state_enabled="true"
+        android:state_checked="false"
+        android:drawable="@drawable/rounded_app_outline_button" />
+    <item
+        android:state_enabled="true"
+        android:state_checked="true"
+        android:drawable="@drawable/rounded_app_button" />
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/rounded_disabled_app_outline_button" />
+</selector>

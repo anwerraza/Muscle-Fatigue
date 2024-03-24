@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4D000000"
+    android:gravity="center"
+    android:clipToPadding="false"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/space_20"
+        android:layout_marginHorizontal="@dimen/screens_side_spacing">
+
+        <LinearLayout
+            android:id="@+id/bottomBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/screens_side_spacing"
+            android:paddingTop="@dimen/space_45"
+            android:paddingBottom="@dimen/space_30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialogTitleTv"
+                style="@style/textHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Workout Alert" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textInputLabelGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_workout" />
+
+
+                <EditText
+                    android:id="@+id/selectWorkoutEt"
+                    style="@style/editTextStyle"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:gravity="center_vertical|start"
+                    android:paddingHorizontal="@dimen/space_10"
+                    android:longClickable="false"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    app:drawableEndCompat="@drawable/ic_arrow_down"
+                    />
+
+
+                <TextView
+                    style="@style/textInputLabelGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:text="@string/select_time" />
+
+                <EditText
+                    android:id="@+id/selectTimeEt"
+                    style="@style/editTextStyle"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:gravity="center_vertical|start"
+                    android:paddingHorizontal="@dimen/space_10"
+                    android:longClickable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:editable="false"
+                    app:drawableEndCompat="@drawable/ic_calendar"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <RadioGroup
+                        android:id="@+id/dayOfWorkoutRG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sundayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/space_5"
+                            android:text="@string/sunday" />
+
+                        <RadioButton
+                            android:id="@+id/mondayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space_5"
+                            android:text="@string/monday" />
+
+                        <RadioButton
+                            android:id="@+id/tuesdayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space_5"
+                            android:text="@string/tuesday" />
+
+                        <RadioButton
+                            android:id="@+id/wednesdayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space_5"
+                            android:text="@string/wednesday" />
+
+                        <RadioButton
+                            android:id="@+id/thursdayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space_5"
+                            android:text="@string/thursday" />
+
+                        <RadioButton
+                            android:id="@+id/fridayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space_5"
+                            android:text="@string/friday" />
+
+                        <RadioButton
+                            android:id="@+id/saturdayRB"
+                            style="@style/radioButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space_5"
+                            android:text="@string/saturday" />
+
+                    </RadioGroup>
+
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/dialogOkBtn"
+                    android:layout_width="wrap_content"
+                    android:minWidth="@dimen/space_350"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginTop="@dimen/space_25"
+                    android:layout_marginBottom="@dimen/space_15"
+                    android:background="@drawable/rounded_corner_app_button"
+                    android:elevation="2dp"
+                    android:singleLine="true"
+                    android:text="@string/save"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/MyButtonTextAppearance" />
+
+
+                <TextView
+                    android:id="@+id/dialogCancelTv"
+                    style="@style/textNormalBlack"
+                    android:layout_width="wrap_content"
+                    android:minWidth="@dimen/space_350"
+                    android:layout_height="@dimen/space_40"
+                    android:gravity="center"
+                    android:text="@string/cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
